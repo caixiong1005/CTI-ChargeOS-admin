@@ -109,7 +109,8 @@ export function selectDictLabels(datas, value, separator) {
       actions.push(temp[val] + currentSeparator);
     }
   })
-  return actions.join('').substring(0, actions.join('').length - 1);
+  const result = actions.join('')
+  return result.substring(0, result.length - 1)
 }
 
 // 字符串格式化(%s )

@@ -7,7 +7,7 @@ function resolve(dir) {
 
 const CompressionPlugin = require('compression-webpack-plugin')
 
-const name = process.env.VUE_APP_TITLE || '(慧哥)慧知开源充电桩平台 - 企业级完整代码包含多租户、硬件模拟器、多运营商、多小程序，汽车 电动自行车、 云快充1.5、1.6 demo、SpringCloud、MySQL、uniapp、redis； 系统安装量1000+ 是您快速部署线上业务和二次开发的最佳选择 。李文慧 中国开源充电桩平台第一人；  李文慧 国内知名开源工作者 全栈工程师 华为云最具价值专家 。' // 网页标题
+const name = process.env.VUE_APP_TITLE || '慧知开源充电桩平台' // 网页标题
 
 const port = process.env.port || process.env.npm_config_port || 80 // 端口
 
@@ -39,6 +39,14 @@ module.exports = {
         changeOrigin: true,
         pathRewrite: {
           ['^' + process.env.VUE_APP_BASE_API]: ''
+        }
+      },
+      // 兼容后端网关以 /prod-api 为前缀的路由（开发联调用，需与后端核对）
+      '/prod-api': {
+        target: `http://127.0.0.1:38080`,
+        changeOrigin: true,
+        pathRewrite: {
+          '^/prod-api': ''
         }
       }
     },

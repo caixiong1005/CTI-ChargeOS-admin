@@ -159,6 +159,10 @@ import {
   link,
   endCharge,
 } from "@/api/operator/port";
+
+// 站点列表一次拉取上限；站点数量庞大时应改为后端分页/搜索懒加载
+const STATION_LIST_MAX_SIZE = 100000;
+
 export default {
   components: {},
   data() {
@@ -198,7 +202,7 @@ export default {
       listStation({
         tenantId,
         pageNum: 1,
-        pageSize: 100000,
+        pageSize: STATION_LIST_MAX_SIZE,
       }).then((response) => {
         this.dataList = response.data;
         if (this.dataList.length) {
@@ -245,20 +249,6 @@ export default {
     },
     //充电状态转换
     getStatus(status) {
-      const typeObject = {
-        0: "空闲",
-        1: "充电",
-        2: "预约",
-        3: "正在启动充电",
-        10: "启动失败",
-        5: "充电故障",
-        "05": "充电故障",
-      };
-      return typeObject[status];
-    },
-
-    //充电状态转换
-    getPortStatus(status) {
       const typeObject = {
         0: "空闲",
         1: "充电",
@@ -415,6 +405,12 @@ export default {
     this.getList();
   },
   updated() {},
+  beforeDestroy() {
+    if (this.timer) {
+      clearInterval(this.timer)
+      this.timer = null
+    }
+  },
   destroyed() {},
 };
 </script>
