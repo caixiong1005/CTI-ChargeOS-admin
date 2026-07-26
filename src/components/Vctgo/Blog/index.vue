@@ -9,7 +9,7 @@ export default {
   name: 'VctgoBlog',
   data() {
     return {
-      url: 'http://wenhui.huizhidata.com/'
+      url: ''
     }
   },
   methods: {

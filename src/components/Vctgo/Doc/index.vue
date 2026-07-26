@@ -9,7 +9,7 @@ export default {
   name: 'VctgoDoc',
   data() {
     return {
-      url: 'http://doc.huizhidata.com/'
+      url: ''
     }
   },
   methods: {

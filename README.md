@@ -6,66 +6,44 @@
 
 
 
-[🔥 Github的代码优先于Gitee   https://github.com/roinli/huige-ChargeOS-cloud](https://github.com/roinli/huige-ChargeOS-cloud)
+# CTI 充电运营平台 - 管理后台前端
 
-
-原地址不明原因被禁用，该库为镜像项目
-
-## 开源版本一定不会很完美，不过会一直持续更新，如果遇到任何问题请提issue或者加群沟通解决，谢谢。
 
 
 
 
 当前版本：3.0.9
 
-[🔥 充电平台微服务源码](https://github.com/roinli/huige-ChargeOS-cloud)
+## 项目组成
 
-[🔥 充电管理后台前端源码](https://github.com/roinli/HUIZHI-ChargeOS-admin)（当前）
-
-[🔥 充电小程序源码](https://github.com/roinli/HUIZHI-ChargeOS-mini)
+- 充电平台微服务源码（ChargeOS-cloud）
+- 充电管理后台前端源码（CTI-ChargeOS-admin，当前仓库）
+- 充电小程序源码（HUIZHI-ChargeOS-mini）
 
 <div align="center">
 
-##   PC管理端 - （慧哥）慧知开源充电桩平台
+## PC 管理端 - CTI 充电运营平台
 
 </div>
 
 <div align="center" >
-    <a href="http://wenhui.huizhidata.com">
+    <a href="#">
         <img src="https://img.shields.io/badge/Licence-GPL3.0-green.svg?style=flat" />
     </a>
-    <a href="http://wenhui.huizhidata.com">
-        <img src="https://img.shields.io/badge/Edition-5.2-blue.svg" />
-    </a>
-     <a href="https://github.com/roinli/huige-ChargeOS-cloud/repository/archive/master.zip">
-        <img src="https://img.shields.io/badge/Download-240m-red.svg" />
+    <a href="#">
+        <img src="https://img.shields.io/badge/Edition-3.0.9-blue.svg" />
     </a>
 </div>
 
-#### 
-
-<div  align="center" >
-
-[官网](http://wenhui.huizhidata.com/) |
-[在线体验](http://hzqc-pc.huizhidata.com/) |
-[帮助文档](http://doc.huizhidata.com) |
-
-[comment]: <> ([宽屏预览]&#40;https://github.com/roinli/huige-ChargeOS-cloud/blob/master/README.md&#41;)
-</div>
-
-### 🖥 +v:18601938676 如果您也对开源感兴趣，欢迎加入群 ,加群请注明原因，开源、共享、共赢永远是主旋律。
-
-
-![输入图片说明](doc/huizhi/images/我的.png)
 ## 开发
 
 ```bash
 # 克隆项目
-git clone https://github.com/roinli/HUIZHI-ChargeOS-admin
+git clone <your-repo-url>/CTI-ChargeOS-admin
 
-#跳转目录
+# 跳转目录
 
-cd HUIZHI-ChargeOS-admin
+cd CTI-ChargeOS-admin
 
 # 安装依赖
 npm install
