@@ -40,14 +40,6 @@ module.exports = {
         pathRewrite: {
           ['^' + process.env.VUE_APP_BASE_API]: ''
         }
-      },
-      // 兼容后端网关以 /prod-api 为前缀的路由（开发联调用，需与后端核对）
-      '/prod-api': {
-        target: `http://127.0.0.1:38080`,
-        changeOrigin: true,
-        pathRewrite: {
-          '^/prod-api': ''
-        }
       }
     },
     disableHostCheck: true
