@@ -18,7 +18,7 @@
 
 - 充电平台微服务源码（ChargeOS-cloud）
 - 充电管理后台前端源码（CTI-ChargeOS-admin，当前仓库）
-- 充电小程序源码（HUIZHI-ChargeOS-mini）
+- 充电小程序源码（CTI-ChargeOS-mini）
 
 <div align="center">
 
