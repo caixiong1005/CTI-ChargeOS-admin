@@ -49,7 +49,8 @@ const user = {
       const uuid = userInfo.uuid
       return new Promise((resolve, reject) => {
         login(username, password, code, uuid).then(res => {
-          let data = res.data
+          // 注意: request 拦截器已把响应解包到内层 data, 这里 res 即为 { access_token, expires_in, tenant_id }
+          let data = res
           setToken(data.access_token)
           commit('SET_TOKEN', data.access_token)
           setExpiresIn(data.expires_in)
@@ -89,8 +90,11 @@ const user = {
     RefreshToken({commit, state}) {
       return new Promise((resolve, reject) => {
         refreshToken(state.token).then(res => {
-          setExpiresIn(res.data)
-          commit('SET_EXPIRES_IN', res.data)
+          // 后端 refresh 返回 R.ok() 内层 data 为 null, 此处仅避免对 null 取 .data 报错; 续期已在服务端完成
+          if (res) {
+            setExpiresIn(res)
+            commit('SET_EXPIRES_IN', res)
+          }
           resolve()
         }).catch(error => {
           reject(error)
