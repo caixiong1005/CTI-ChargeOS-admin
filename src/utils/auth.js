@@ -6,8 +6,10 @@ const ExpiresInKey = 'Admin-Expires-In'
 
 const TenantKey = 'Admin-Tenant'
 
-// 生产环境启用 secure + sameSite，降低 Token 被中间人/跨站获取的风险（需全站 HTTPS）
-const cookieOptions = process.env.NODE_ENV === 'production'
+// 仅当站点确实运行在 HTTPS 时才启用 secure。
+// 当前平台经 HTTP(80) 访问：若强制 secure=true，浏览器不会在 HTTP 下存储/发送
+// Admin-Token，导致登录成功拿到 token 却在下个请求取不到，被路由守卫踢回 /login。
+const cookieOptions = (process.env.NODE_ENV === 'production' && typeof window !== 'undefined' && window.location.protocol === 'https:')
   ? { secure: true, sameSite: 'Lax' }
   : {}
 
