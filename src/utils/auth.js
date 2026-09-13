@@ -1,10 +1,13 @@
 import Cookies from 'js-cookie'
 
-const TokenKey = 'Admin-Token'
+// 注意: cookie 名曾为 Admin-Token/Admin-Tenant/Admin-Expires-In。
+// 旧的 secure cookie 残留在 HTTP 页面下仍会被 document.cookie 读到并误当作新 token 发出,
+// 导致网关判定会话过期(401 "无效的会话")。这里换用新 key 名, 让浏览器忽略所有历史残留 cookie, 自愈该问题。
+const TokenKey = 'Hcp-Token'
 
-const ExpiresInKey = 'Admin-Expires-In'
+const ExpiresInKey = 'Hcp-Expires-In'
 
-const TenantKey = 'Admin-Tenant'
+const TenantKey = 'Hcp-Tenant'
 
 // 仅当站点确实运行在 HTTPS 时才启用 secure。
 // 当前平台经 HTTP(80) 访问：若强制 secure=true，浏览器不会在 HTTP 下存储/发送
