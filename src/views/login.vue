@@ -93,7 +93,7 @@
 import { getCodeImg } from "@/api/login";
 import Cookies from "js-cookie";
 import { encrypt } from "@/utils/jsencrypt";
-import logoImg from "@/assets/logo/logo.png";
+import logoImg from "@/assets/logo/logo.svg";
 
 export default {
   name: "Login",

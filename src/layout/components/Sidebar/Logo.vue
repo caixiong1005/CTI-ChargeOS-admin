@@ -50,7 +50,7 @@
 
 <script>
 import { getInfo } from "@/api/login";
-import logoImg from "@/assets/logo/logo.png";
+import logoImg from "@/assets/logo/logo.svg";
 import variables from "@/assets/styles/variables.scss";
 
 export default {
