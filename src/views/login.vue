@@ -1,10 +1,5 @@
 <template>
   <div class="login">
-    <section class="codes">
-      <img src="../assets/logo/gzh.jpg" class="code code0"/>
-      <img src="../assets/logo/file-read.jpg" class="code code2" />
-      <img src="../assets/logo/lwh.jpg" class="code code1"/>
-    </section>
     <el-form
       ref="loginForm"
       :model="loginForm"
@@ -18,7 +13,7 @@
           style="height: 20px; display: inline-block; margin-right: 10px"
         />
         <h3 class="title" style="display: inline-block; font-size: 25px">
-          慧知开源充电桩平台
+          充电桩平台
         </h3>
       </div>
       <el-form-item prop="username">
@@ -91,15 +86,6 @@
         </div>
       </el-form-item>
     </el-form>
-    <!--  底部  -->
-    <div class="el-login-footer">
-      <strong
-        >版权所有 Copyright &copy; 2022-2023 &nbsp;
-        <a href="http://www.vctgo.com/" target="_blank">慧知开源充电桩平台</a
-        >&nbsp;&nbsp;技术支持：中科慧知（苏州）智能科技有限公司 </strong
-      ><!-- All rights reserved. -->
-      <!--      <span>Copyright © 2018-2022 www.vctgo.com All Rights Reserved.</span>-->
-    </div>
   </div>
 </template>
 
@@ -217,27 +203,6 @@ export default {
   text-align: center;
   color: #707070;
 }
-.codes{
-  width: 600px;
-  display: inline-block;
-  position: absolute;
-}
-.code{
-  width: 120px;
-  margin-right: 20px;
-}
-.code0{
-  width: 132px;
-  position: relative;
-  top: 4px;
-}
-.code2-wrapper{
-  width: 130px;
-  text-align: center;
-}
-.code2{
-  width: 120px;
-}
 .login-form {
   border-radius: 6px;
   background: #ffffff;
@@ -269,18 +234,6 @@ export default {
     cursor: pointer;
     vertical-align: middle;
   }
-}
-.el-login-footer {
-  height: 40px;
-  line-height: 40px;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  text-align: center;
-  color: #000000;
-  font-family: Arial;
-  font-size: 12px;
-  letter-spacing: 1px;
 }
 .login-code-img {
   height: 38px;

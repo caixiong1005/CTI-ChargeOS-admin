@@ -71,7 +71,7 @@ export default {
   },
   data() {
     return {
-      title: '慧知开源充电桩平台',
+      title: '充电桩平台',
       logo: logoImg,
     };
   },

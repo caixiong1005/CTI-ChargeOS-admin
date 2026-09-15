@@ -70,16 +70,16 @@ npm run build:prod
 
 |                                          |                                                            |
 |------------------------------------------|------------------------------------------------------------|
-| ![登录页.png](doc/huizhi/intro/登录页.png)     | ![运营管理.png](doc/huizhi/intro//运营管理.png)     |
-| ![站点信息.png](doc/huizhi/intro//站点信息.png)  | ![充电桩.png](doc/huizhi/intro//充电桩.png)       |
-| ![模拟充电桩.png](doc/huizhi/intro//模拟充电桩.png) | ![充电口.png](doc/huizhi/intro//充电口.png)       |
-| ![互联互通.png](doc/huizhi/intro//互联互通.png)  | ![订单.png](doc/huizhi/intro//订单.png)         |
-| ![充电订单.png](doc/huizhi/intro//充电订单.png)  | ![小程序用户.png](doc/huizhi/intro//小程序用户.png)   |
-| ![计费规则.png](doc/huizhi/intro//计费规则.png)  | ![修改计费规则.png](doc/huizhi/intro//修改计费规则.png)   |
-| ![微信小程序.png](doc/huizhi/intro//微信小程序.png) | ![租户套餐.png](doc/huizhi/intro//租户套餐.png)   |
-| ![租户管理.png](doc/huizhi/intro//租户管理.png)  | ![对象存储配置.png](doc/huizhi/intro//对象存储配置.png)   |
-| ![用户管理.png](doc/huizhi/intro//用户管理.png)  | ![菜单管理.png](doc/huizhi/intro//菜单管理.png)   |
-| ![角色管理.png](doc/huizhi/intro//角色管理.png)  | ![部门管理.png](doc/huizhi/intro//部门管理.png)  |
-| ![岗位管理.png](doc/huizhi/intro//岗位管理.png)  | ![字典管理.png](doc/huizhi/intro//字典管理.png) |
-| ![参数设置.png](doc/huizhi/intro//参数设置.png)  | ![通知公告.png](doc/huizhi/intro//通知公告.png)   |
-| ![操作日志.png](doc/huizhi/intro//操作日志.png)  | ![登录日志.png](doc/huizhi/intro//登录日志.png)   |
+| ![登录页.png](doc/screenshots/intro/登录页.png)     | ![运营管理.png](doc/screenshots/intro//运营管理.png)     |
+| ![站点信息.png](doc/screenshots/intro//站点信息.png)  | ![充电桩.png](doc/screenshots/intro//充电桩.png)       |
+| ![模拟充电桩.png](doc/screenshots/intro//模拟充电桩.png) | ![充电口.png](doc/screenshots/intro//充电口.png)       |
+| ![互联互通.png](doc/screenshots/intro//互联互通.png)  | ![订单.png](doc/screenshots/intro//订单.png)         |
+| ![充电订单.png](doc/screenshots/intro//充电订单.png)  | ![小程序用户.png](doc/screenshots/intro//小程序用户.png)   |
+| ![计费规则.png](doc/screenshots/intro//计费规则.png)  | ![修改计费规则.png](doc/screenshots/intro//修改计费规则.png)   |
+| ![微信小程序.png](doc/screenshots/intro//微信小程序.png) | ![租户套餐.png](doc/screenshots/intro//租户套餐.png)   |
+| ![租户管理.png](doc/screenshots/intro//租户管理.png)  | ![对象存储配置.png](doc/screenshots/intro//对象存储配置.png)   |
+| ![用户管理.png](doc/screenshots/intro//用户管理.png)  | ![菜单管理.png](doc/screenshots/intro//菜单管理.png)   |
+| ![角色管理.png](doc/screenshots/intro//角色管理.png)  | ![部门管理.png](doc/screenshots/intro//部门管理.png)  |
+| ![岗位管理.png](doc/screenshots/intro//岗位管理.png)  | ![字典管理.png](doc/screenshots/intro//字典管理.png) |
+| ![参数设置.png](doc/screenshots/intro//参数设置.png)  | ![通知公告.png](doc/screenshots/intro//通知公告.png)   |
+| ![操作日志.png](doc/screenshots/intro//操作日志.png)  | ![登录日志.png](doc/screenshots/intro//登录日志.png)   |

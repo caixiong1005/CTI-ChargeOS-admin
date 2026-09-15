@@ -1,7 +1,7 @@
 {
   "name": "hcp-ui",
   "version": "1.0.0",
-  "description": "慧知开源充电桩平台",
+  "description": "充电桩平台",
   "author": "hcp",
   "license": "MIT",
   "scripts": {
@@ -31,10 +31,6 @@
     "admin-template",
     "management-system"
   ],
-  "repository": {
-    "type": "git",
-    "url": "https://gitee.com/dhr92/vctgo-platform.git"
-  },
   "dependencies": {
     "@riophae/vue-treeselect": "0.4.0",
     "axios": "0.24.0",

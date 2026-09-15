@@ -6,7 +6,7 @@ import Element from 'element-ui'
 import './assets/styles/element-variables.scss'
 
 import '@/assets/styles/index.scss' // global css
-import '@/assets/styles/hcp.scss' // vctgo css
+import '@/assets/styles/hcp.scss' // hcp css
 import App from './App'
 import store from './store'
 import router from './router'

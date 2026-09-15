@@ -267,7 +267,7 @@ export default {
           this.$modal.msgSuccess("成功生成到自定义路径：" + row.genPath);
         });
       } else {
-        this.$download.zip("/code/gen/batchGenCode?tables=" + tableNames, "vctgo.zip");
+        this.$download.zip("/code/gen/batchGenCode?tables=" + tableNames, "chargeos.zip");
       }
     },
     /** 同步数据库操作 */
